@@ -1,0 +1,179 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 0 15px;
+}
+
+
+header {
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h1{
+    font-size: 2rem;
+}
+
+ul li {
+    margin: 0 10px;
+    text-align: justify;
+}
+
+
+nav {
+    background-color: lightblue;
+    padding: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+
+nav ul {
+    display: flex;
+    justify-content: center;
+    padding: 0;
+    margin: 0;
+    list-style-type: none;
+}
+
+nav ul li {
+    margin: 0 10px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: blueviolet;
+    font-weight: bold;
+    padding: 5px 10px;
+}
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    font-size: 1rem;
+}
+
+
+main {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+main section {
+    padding: 2rem;
+    margin: 1rem 0;
+    max-width: 800px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    width: 100%;
+    box-sizing: border-box;
+}
+
+h2 {
+    color: #4CAF50;
+    font-size: 2rem;
+}
+
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    width: 100%;
+}
+
+
+label {
+    margin: 10px 0 5px;
+}
+
+input, textarea {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+button {
+    padding: 10px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+
+.i {
+    border-radius: 20px;
+    border: 2px solid #4CAF50;
+    max-width: 100%;
+    height: auto;
+}
+
+#impactos {
+    background-color: #ffebee;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#impactos h2 {
+    color: #c62828;
+}
+
+#impactos h3 {
+    color: #b71c1c;
+}
+
+
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav ul li {
+        margin: 5px 0;
+    }
+
+    main section {
+        padding: 1rem;
+    }
+
+    button {
+        padding: 8px;
+    }
+}
+
+@media (max-width: 480px) {
+    header, nav, main section {
+        padding: 10px;
+    }
+
+    nav ul li a {
+        margin-right: 10px;
+        padding: 5px;
+    }
+}
